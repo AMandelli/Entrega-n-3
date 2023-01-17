@@ -1,0 +1,54 @@
+.cajapadre {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 40px);
+    margin: auto;
+    > .cajahijo1 {
+        margin: 10px;
+      }
+    >  .cajahijo2 {
+        margin: 10px;
+      }
+    >  .cajahijo3 > img {
+        width: 100%;
+      }   
+    >  .cajahijo4 {
+        margin: 10px;
+      }  
+    >  .cajahijo5 > img {
+        width: 100%;
+      } 
+    > .cajahijo6 {
+        margin: 10px;
+      } 
+    @media (min-width: 768px) {
+          flex-direction: row;
+          align-items: center;
+          >  .cajahijo3 {
+            width: 45%;
+            padding: 10px;
+            > img {
+                width: 100%;
+              }
+          }
+          > .cajahijo4 {
+            width: 45%;
+            padding: 10px;
+          }
+          > .cajahijo5 {
+            width: 45%;
+            padding: 10px;
+            > img {
+                width: 100%;
+              }
+          }
+          > .cajahijo6 {
+            width: 45%;
+            padding: 10px;
+          }
+          
+    }    
+}

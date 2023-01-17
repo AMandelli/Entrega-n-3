@@ -1,0 +1,78 @@
+.formulario {
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.685);
+    max-width: 900px;
+    margin: 10px auto;
+    border-radius: 10px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 60px;
+    grid-template-areas: "titulo    titulo" "NomApell  email" "tel       asunto" "mensaje   mensaje" "btn       btn";
+    > h2:nth-child(1) {
+        grid-area: titulo;
+        color: white;
+        font-size: 30px;
+      }
+    >  label:nth-child(2) {
+        grid-area: NomApell;
+      }
+    > label:nth-child(3) {
+        grid-area: email;
+      }  
+    > label:nth-child(4) {
+        grid-area: tel;
+      }
+    > label:nth-child(5) {
+        grid-area: asunto;
+      }  
+    > label:nth-child(6) {
+        grid-area: mensaje;
+      }   
+    > button:nth-child(7) {
+        grid-area: btn;
+        background-color: rgb(255, 255, 255);
+        border: none;
+        border-radius: 5px;
+        color: $colorsecundario;
+        font-weight: bold;
+        font-size: 15px;
+        margin: 5px;
+        margin-top: 20px;
+        font-family: "Times New Roman", Times, serif;
+      }  
+    > label {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: white;
+        > input{
+            background-color: transparent;
+            border: 0;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-family: "Times New Roman", Times, serif;
+        }  
+        > textarea{
+            background-color: transparent;
+            border: 0;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            height: 70px;
+            font-family: Georgia, "Times New Roman", Times, serif;
+        }
+    }
+    @media (max-width: 576px) {
+      width: calc(100% - 40px);
+      border-radius: 10;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 60px;
+      grid-template-areas: "titulo" "NomApell" "email" "tel" "asunto" "mensaje" "btn";
+    
+    }
+}
+  
+    
+  

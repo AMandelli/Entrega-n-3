@@ -1,0 +1,13 @@
+.tarjeta {
+    @extend %tarjeta;
+    > img {
+        width: $ancho;
+        height: 160px;
+      }
+    > button {
+        @include button($colorsecundario,white);
+        &:hover{
+          background-color: rgba(0, 0, 0, 0.342)
+        }
+      }
+  }
