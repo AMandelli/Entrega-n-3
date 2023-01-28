@@ -5,9 +5,9 @@
         height: 160px;
       }
     > button {
-        @include button($colorsecundario,white);
+        @include button(rgb(8, 8, 119),white);
         &:hover{
-          background-color: rgba(0, 0, 0, 0.342)
+          background-color: rgb(15, 15, 185)
         }
       }
   }

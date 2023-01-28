@@ -7,12 +7,27 @@
 }
 
 footer {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+@media (max-width: 576px) {
+  footer {
+    position: relative;
+  }
 }
 
 body {
   background-color: gray;
+  margin-bottom: 150px;
+}
+@media (max-width: 576px) {
+  body {
+    margin-bottom: 0;
+  }
 }
 
 .formulario {
@@ -49,15 +64,17 @@ body {
 }
 .formulario > button:nth-child(7) {
   grid-area: btn;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(8, 8, 119);
   border: none;
   border-radius: 5px;
-  color: black;
-  font-weight: bold;
-  font-size: 15px;
+  color: white;
+  font-size: 20px;
   margin: 5px;
   margin-top: 20px;
   font-family: "Times New Roman", Times, serif;
+}
+.formulario > button:nth-child(7):hover {
+  background-color: rgb(15, 15, 185);
 }
 .formulario > label {
   display: flex;
@@ -148,6 +165,38 @@ body {
   }
 }
 
+.infoExtra {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 10px;
+}
+@media (min-width: 768px) {
+  .infoExtra h3 {
+    font-size: 30px;
+  }
+  .infoExtra .mapa {
+    width: 500px;
+  }
+}
+@media (min-width: 1000px) {
+  .infoExtra {
+    margin-left: 425px;
+  }
+  .infoExtra .mapa {
+    width: 600px;
+  }
+}
+@media (min-width: 1300px) {
+  .infoExtra {
+    margin-left: 600px;
+  }
+  .infoExtra .mapa {
+    width: 650px;
+  }
+}
+
 * {
   margin: 0;
   margin: 0;
@@ -155,7 +204,7 @@ body {
 }
 
 .navbar {
-  background-color: black !important;
+  background-color: rgb(0, 0, 0) !important;
 }
 
 .navbar-brand {
@@ -169,12 +218,13 @@ body {
 .tarjeta > button {
   border: 0;
   border-radius: 8px;
-  background-color: black;
+  background-color: rgb(8, 8, 119);
   padding: 6px;
   color: white;
+  margin-bottom: 0px;
 }
 .tarjeta > button:hover {
-  background-color: rgba(0, 0, 0, 0.342);
+  background-color: rgb(15, 15, 185);
 }
 
 .loading {

@@ -31,15 +31,17 @@
       }   
     > button:nth-child(7) {
         grid-area: btn;
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(8, 8, 119);
         border: none;
         border-radius: 5px;
-        color: $colorsecundario;
-        font-weight: bold;
-        font-size: 15px;
+        color: white;
+        font-size: 20px;
         margin: 5px;
         margin-top: 20px;
         font-family: "Times New Roman", Times, serif;
+        &:hover{
+          background-color:  rgb(15, 15, 185);
+        }
       }  
     > label {
         display: flex;

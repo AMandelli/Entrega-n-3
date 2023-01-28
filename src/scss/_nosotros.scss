@@ -52,3 +52,31 @@
           
     }    
 }
+
+.infoExtra{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 10px;
+  @media (min-width:768px){
+      h3{
+          font-size: 30px;
+      }
+      .mapa{
+          width: 500px;
+      }
+  }
+  @media (min-width:1000px){
+     margin-left: 425px;
+     .mapa{
+      width: 600px;
+     }
+  }
+  @media (min-width:1300px) {
+      margin-left: 600px;
+      .mapa{
+          width: 650px;
+      }
+  }
+}

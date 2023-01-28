@@ -1,4 +1,11 @@
 footer {
     background-color: $colorsecundario;
     color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    @media (max-width: 576px){
+      position:relative
+    }
   }
